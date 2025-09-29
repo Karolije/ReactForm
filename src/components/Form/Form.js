@@ -18,7 +18,6 @@ const FormWrapper = () => {
     country: "",
   });
 
-  console.log("step", step);
   const nextStep = () => setStep((prev) => Math.min(prev + 1, 3));
   const prevStep = () => setStep((prev) => Math.max(prev - 1, 1));
 
@@ -31,6 +30,7 @@ const FormWrapper = () => {
       case 1:
         return (
           <Step1
+            step={step}
             formData={formData}
             setFormData={setFormData}
             updateFormData={updateFormData}
@@ -40,6 +40,7 @@ const FormWrapper = () => {
       case 2:
         return (
           <Step2
+            step={step}
             formData={formData}
             setFormData={setFormData}
             updateFormData={updateFormData}
@@ -50,6 +51,7 @@ const FormWrapper = () => {
       case 3:
         return (
           <Step3
+            step={step}
             formData={formData}
             setFormData={setFormData}
             prevStep={prevStep}

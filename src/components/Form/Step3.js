@@ -55,7 +55,7 @@ const Step3 = ({ prevStep, formData, setStep, setFormData }) => {
   };
 
   return (
-    <Container>
+    <Container step={3}>
       <Title>Podsumowanie</Title>
       <SummaryGrid>
         <SummaryItem>

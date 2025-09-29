@@ -7,7 +7,7 @@ function App() {
       style={{
         padding: "2rem",
         background: colors.background,
-        height: "100vh",
+        minHeight: "100vh",
       }}
     >
       <Form />{" "}
